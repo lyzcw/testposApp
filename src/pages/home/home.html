@@ -1,14 +1,25 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      新大陆POS插件测试用APP
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div class="bar bar-header">
+    <div class="h1 title">POS插件响应<button ion-button button-calm (click)="clear()">清空</button></div>
+  </div>
+  <div class="content has-header">
+    <div class="list">
+      <label class="item item-input">
+        <textarea [(ngModel)]="homeModel.response" placeholder="等待pos响应..." rows="18" cols="44" #response1></textarea>
+      </label>
+    </div>
+    <p><button ion-button button-positive (click)="openCardReader()">打开读卡器</button><button ion-button button-positive (click)="closeCardReader()">关闭读卡器</button></p>
+    <p><button ion-button button-positive (click)="scan()">扫码</button></p>
+    <p><button ion-button button-positive (click)="print()">打印</button></p>
+    
+  </div>
+  
 </ion-content>
