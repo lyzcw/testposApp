@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Workspaces\\testposApp\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable\\scan_hint_list.xml",
+        "source": "D:\\Workspaces\\testposApp\\platforms\\android\\res\\drawable\\scan_hint_list.xml"
+    },
+    {
+        "merged": "D:\\Workspaces\\testposApp\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable\\tst.png",
+        "source": "D:\\Workspaces\\testposApp\\platforms\\android\\res\\drawable\\tst.png"
+    }
+]

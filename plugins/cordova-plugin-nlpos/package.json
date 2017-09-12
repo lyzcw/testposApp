@@ -1,0 +1,17 @@
+{
+  "name": "nlpos",
+  "version": "0.0.1",
+  "description": "For invoke NewLand POS sdk",
+  "cordova": {
+    "id": "cordova-plugin-nlpos",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "lyzcw",
+  "license": "ISC"
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Workspaces\\testposApp\\platforms\\android\\nlpos\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\lyzcw\\.android\\build-cache\\bc9d87dea6c71105c5a588f5e6075afae165f00a\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\Workspaces\\testposApp\\platforms\\android\\nlpos\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\lyzcw\\.android\\build-cache\\bc9d87dea6c71105c5a588f5e6075afae165f00a\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\Workspaces\\testposApp\\platforms\\android\\nlpos\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\lyzcw\\.android\\build-cache\\bc9d87dea6c71105c5a588f5e6075afae165f00a\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\Workspaces\\testposApp\\platforms\\android\\nlpos\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\lyzcw\\.android\\build-cache\\bc9d87dea6c71105c5a588f5e6075afae165f00a\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    }
+]
