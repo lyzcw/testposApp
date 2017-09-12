@@ -101,6 +101,7 @@
     <orderEntry type="jdk" jdkName="Android API 25 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="meSdk-3.2.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="nlpos-res-" level="project" />
     <orderEntry type="library" exported="" name="zxing-core-3.1.0" level="project" />
     <orderEntry type="module" module-name="CordovaLib" exported="" />
   </component>

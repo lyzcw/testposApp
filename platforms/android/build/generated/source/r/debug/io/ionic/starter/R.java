@@ -31,11 +31,11 @@ public final class R {
         public static final int iv_scan_hint_1=0x7f020000;
         public static final int iv_scan_hint_2=0x7f020001;
         public static final int iv_scan_hint_3=0x7f020002;
-        public static final int scan_hint_list=0x7f020003;
-        public static final int screen=0x7f020004;
-        public static final int switch_scanner_pre=0x7f020005;
-        public static final int switch_scanner_press=0x7f020006;
-        public static final int tst=0x7f020007;
+        public static final int printicon=0x7f020003;
+        public static final int scan_hint_list=0x7f020004;
+        public static final int screen=0x7f020005;
+        public static final int switch_scanner_pre=0x7f020006;
+        public static final int switch_scanner_press=0x7f020007;
     }
     public static final class id {
         public static final int fl_back=0x7f090000;

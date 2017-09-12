@@ -101,7 +101,7 @@ public class nlpos extends CordovaPlugin {
           try {
             cardReader=n900Device.getCardReaderModuleType();
             Log.d(LOG_TAG, "开始：打开读卡器");
-            cardReader.openCardReader("请刷卡或者插入IC卡", new ModuleType[] { ModuleType.COMMON_SWIPER, ModuleType.COMMON_ICCARDREADER, ModuleType.COMMON_RFCARDREADER }, false, true, 120, TimeUnit.SECONDS, new DeviceEventListener<K21CardReaderEvent>() {
+            cardReader.openCardReader("请刷卡或者插入IC卡", new ModuleType[] { ModuleType.COMMON_SWIPER, ModuleType.COMMON_ICCARDREADER, ModuleType.COMMON_RFCARDREADER }, false, true, 60, TimeUnit.SECONDS, new DeviceEventListener<K21CardReaderEvent>() {
               @Override
               public void onEvent(K21CardReaderEvent openCardReaderEvent, Handler handler) {
                 Log.d(LOG_TAG, "监听到：刷卡事件");

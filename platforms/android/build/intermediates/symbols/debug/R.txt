@@ -16,11 +16,11 @@ int color yellow 0x7f07000e
 int drawable iv_scan_hint_1 0x7f020000
 int drawable iv_scan_hint_2 0x7f020001
 int drawable iv_scan_hint_3 0x7f020002
-int drawable scan_hint_list 0x7f020003
-int drawable screen 0x7f020004
-int drawable switch_scanner_pre 0x7f020005
-int drawable switch_scanner_press 0x7f020006
-int drawable tst 0x7f020007
+int drawable printicon 0x7f020003
+int drawable scan_hint_list 0x7f020004
+int drawable screen 0x7f020005
+int drawable switch_scanner_pre 0x7f020006
+int drawable switch_scanner_press 0x7f020007
 int id fl_back 0x7f090000
 int id scanviewback 0x7f090002
 int id surfaceView 0x7f090001

@@ -18,7 +18,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import io.ionic.starter.R;
+import com.openunion.cordova.plugins.nlpos.R;
 import com.openunion.cordova.plugins.nlpos.Const.ScanType;
 import com.newland.mtype.log.DeviceLogger;
 import com.newland.mtype.log.DeviceLoggerFactory;

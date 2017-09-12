@@ -19,7 +19,7 @@ public class Constant {
   //异步消息
   public static String asynMsg = "";
   //打印
-  public static final String icon_path = "/res/drawable/tst.png";
+  public static final String icon_path = "/res/drawable/printicon.png";
   public static final String merchant_label = "商户名称(MERCHANT NAME)：";
   public static final String merchant_name = "钓鱼岛";
   public static final String merchant_code_label = "商户编号:：";

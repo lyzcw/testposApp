@@ -106,6 +106,7 @@ public class nlpos extends CordovaPlugin {
               public void onEvent(K21CardReaderEvent openCardReaderEvent, Handler handler) {
                 Log.d(LOG_TAG, "监听到：刷卡事件");
                 Map map1 = new HashMap();
+                Map map0 = new HashMap();
                 if (openCardReaderEvent.isSuccess()) {
                   Log.d(LOG_TAG, "监听到：刷卡成功");
                   switch (openCardReaderEvent.getOpenCardReaderResult().getResponseCardTypes()[0]) {
@@ -117,12 +118,7 @@ public class nlpos extends CordovaPlugin {
                       }else{
                         SwipRead swipdRead = new SwipRead();
                         swipdRead.swiper = n900Device.getK21Swiper();
-                        Map map0 = new HashMap();
                         map0 = swipdRead.readExpress();
-                        map0.put("event","readcard");
-                        Log.d(LOG_TAG, (new JSONObject(map0)).toString() );
-                        Constant.asynMsg = (new JSONObject(map0)).toString();
-                        sendUpdate( new JSONObject(map0), true );
                       }
                       break;
                     case ICCARD:
@@ -142,12 +138,7 @@ public class nlpos extends CordovaPlugin {
                             rfCardRead.rfCardModule = n900Device.getRFCardModule();
                             rfCardRead.m1CardPowerOn();
                             rfCardRead.authenticateByExtendKey();
-                            Map map0 = new HashMap();
                             map0 = rfCardRead.readBlock();
-                            map0.put("event","readcard");
-                            Log.d(LOG_TAG, (new JSONObject(map0)).toString() );
-                            Constant.asynMsg = (new JSONObject(map0)).toString();
-                            sendUpdate( new JSONObject(map0), true );
                           } else if (sak == 0x18) {
                             showMsg="读卡器识别到非接S70卡";
                           } else if (sak == 0x28) {
@@ -168,12 +159,11 @@ public class nlpos extends CordovaPlugin {
                     default:
                       break;
                   }
-                  map1.put("status", SUCCESS);
-                  map1.put("msg",showMsg);
-                  map1.put("event","readcard");
                   Log.d(LOG_TAG, showMsg);
-                  sendUpdate( new JSONObject(map1), true );
-                  //asynMsg = new JSONObject(map1);
+                  map0.put("event","readcard");
+                  Log.d(LOG_TAG, (new JSONObject(map0)).toString() );
+                  Constant.asynMsg = (new JSONObject(map0)).toString();
+                  sendUpdate( new JSONObject(map0), true );
                 } else if (openCardReaderEvent.isUserCanceled()) {
                   showMsg = "取消开启读卡器";
                 } else if (openCardReaderEvent.isFailed()   ) {

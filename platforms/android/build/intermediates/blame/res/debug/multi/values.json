@@ -11,13 +11,13 @@
                     "endOffset": 90
                 },
                 "from": {
-                    "file": "D:\\Workspaces\\testposApp\\platforms\\android\\res\\values\\color.xml",
+                    "file": "C:\\Users\\lyzcw\\.android\\build-cache\\382e33d1dc94ff080a9f3cb9f39ab936d7448330\\output\\res\\values\\values.xml",
                     "position": {
-                        "startLine": 4,
-                        "startColumn": 1,
-                        "startOffset": 112,
-                        "endColumn": 36,
-                        "endOffset": 147
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 39,
+                        "endOffset": 90
                     }
                 }
             },
@@ -30,13 +30,13 @@
                     "endOffset": 129
                 },
                 "from": {
-                    "file": "D:\\Workspaces\\testposApp\\platforms\\android\\res\\values\\color.xml",
+                    "file": "C:\\Users\\lyzcw\\.android\\build-cache\\382e33d1dc94ff080a9f3cb9f39ab936d7448330\\output\\res\\values\\values.xml",
                     "position": {
-                        "startLine": 8,
-                        "startColumn": 1,
-                        "startOffset": 264,
-                        "endColumn": 35,
-                        "endOffset": 298
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 95,
+                        "endColumn": 38,
+                        "endOffset": 129
                     }
                 }
             },
@@ -49,13 +49,13 @@
                     "endOffset": 169
                 },
                 "from": {
-                    "file": "D:\\Workspaces\\testposApp\\platforms\\android\\res\\values\\color.xml",
+                    "file": "C:\\Users\\lyzcw\\.android\\build-cache\\382e33d1dc94ff080a9f3cb9f39ab936d7448330\\output\\res\\values\\values.xml",
                     "position": {
-                        "startLine": 10,
-                        "startColumn": 1,
-                        "startOffset": 315,
-                        "endColumn": 36,
-                        "endOffset": 350
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 134,
+                        "endColumn": 39,
+                        "endOffset": 169
                     }
                 }
             },
@@ -68,13 +68,13 @@
                     "endOffset": 213
                 },
                 "from": {
-                    "file": "D:\\Workspaces\\testposApp\\platforms\\android\\res\\values\\color.xml",
+                    "file": "C:\\Users\\lyzcw\\.android\\build-cache\\382e33d1dc94ff080a9f3cb9f39ab936d7448330\\output\\res\\values\\values.xml",
                     "position": {
-                        "startLine": 18,
-                        "startColumn": 1,
-                        "startOffset": 560,
-                        "endColumn": 40,
-                        "endOffset": 599
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 174,
+                        "endColumn": 43,
+                        "endOffset": 213
                     }
                 }
             },
@@ -87,13 +87,13 @@
                     "endOffset": 252
                 },
                 "from": {
-                    "file": "D:\\Workspaces\\testposApp\\platforms\\android\\res\\values\\color.xml",
+                    "file": "C:\\Users\\lyzcw\\.android\\build-cache\\382e33d1dc94ff080a9f3cb9f39ab936d7448330\\output\\res\\values\\values.xml",
                     "position": {
-                        "startLine": 13,
-                        "startColumn": 1,
-                        "startOffset": 416,
-                        "endColumn": 35,
-                        "endOffset": 450
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 218,
+                        "endColumn": 38,
+                        "endOffset": 252
                     }
                 }
             },
@@ -106,13 +106,13 @@
                     "endOffset": 293
                 },
                 "from": {
-                    "file": "D:\\Workspaces\\testposApp\\platforms\\android\\res\\values\\color.xml",
+                    "file": "C:\\Users\\lyzcw\\.android\\build-cache\\382e33d1dc94ff080a9f3cb9f39ab936d7448330\\output\\res\\values\\values.xml",
                     "position": {
-                        "startLine": 20,
-                        "startColumn": 2,
-                        "startOffset": 606,
-                        "endColumn": 38,
-                        "endOffset": 642
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 257,
+                        "endColumn": 40,
+                        "endOffset": 293
                     }
                 }
             },
@@ -125,13 +125,13 @@
                     "endOffset": 333
                 },
                 "from": {
-                    "file": "D:\\Workspaces\\testposApp\\platforms\\android\\res\\values\\color.xml",
+                    "file": "C:\\Users\\lyzcw\\.android\\build-cache\\382e33d1dc94ff080a9f3cb9f39ab936d7448330\\output\\res\\values\\values.xml",
                     "position": {
-                        "startLine": 7,
-                        "startColumn": 1,
-                        "startOffset": 215,
-                        "endColumn": 36,
-                        "endOffset": 250
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 298,
+                        "endColumn": 39,
+                        "endOffset": 333
                     }
                 }
             },
@@ -144,13 +144,13 @@
                     "endOffset": 377
                 },
                 "from": {
-                    "file": "D:\\Workspaces\\testposApp\\platforms\\android\\res\\values\\color.xml",
+                    "file": "C:\\Users\\lyzcw\\.android\\build-cache\\382e33d1dc94ff080a9f3cb9f39ab936d7448330\\output\\res\\values\\values.xml",
                     "position": {
-                        "startLine": 16,
-                        "startColumn": 1,
-                        "startOffset": 515,
-                        "endColumn": 40,
-                        "endOffset": 554
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 338,
+                        "endColumn": 43,
+                        "endOffset": 377
                     }
                 }
             },
@@ -163,13 +163,13 @@
                     "endOffset": 432
                 },
                 "from": {
-                    "file": "D:\\Workspaces\\testposApp\\platforms\\android\\res\\values\\color.xml",
+                    "file": "C:\\Users\\lyzcw\\.android\\build-cache\\382e33d1dc94ff080a9f3cb9f39ab936d7448330\\output\\res\\values\\values.xml",
                     "position": {
-                        "startLine": 28,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 838,
+                        "startOffset": 382,
                         "endColumn": 54,
-                        "endOffset": 888
+                        "endOffset": 432
                     }
                 }
             },
@@ -182,13 +182,13 @@
                     "endOffset": 473
                 },
                 "from": {
-                    "file": "D:\\Workspaces\\testposApp\\platforms\\android\\res\\values\\color.xml",
+                    "file": "C:\\Users\\lyzcw\\.android\\build-cache\\382e33d1dc94ff080a9f3cb9f39ab936d7448330\\output\\res\\values\\values.xml",
                     "position": {
-                        "startLine": 14,
-                        "startColumn": 1,
-                        "startOffset": 463,
-                        "endColumn": 37,
-                        "endOffset": 499
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 437,
+                        "endColumn": 40,
+                        "endOffset": 473
                     }
                 }
             },
@@ -201,13 +201,13 @@
                     "endOffset": 511
                 },
                 "from": {
-                    "file": "D:\\Workspaces\\testposApp\\platforms\\android\\res\\values\\color.xml",
+                    "file": "C:\\Users\\lyzcw\\.android\\build-cache\\382e33d1dc94ff080a9f3cb9f39ab936d7448330\\output\\res\\values\\values.xml",
                     "position": {
-                        "startLine": 6,
-                        "startColumn": 1,
-                        "startOffset": 166,
-                        "endColumn": 34,
-                        "endOffset": 199
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 478,
+                        "endColumn": 37,
+                        "endOffset": 511
                     }
                 }
             },
@@ -220,13 +220,13 @@
                     "endOffset": 556
                 },
                 "from": {
-                    "file": "D:\\Workspaces\\testposApp\\platforms\\android\\res\\values\\color.xml",
+                    "file": "C:\\Users\\lyzcw\\.android\\build-cache\\382e33d1dc94ff080a9f3cb9f39ab936d7448330\\output\\res\\values\\values.xml",
                     "position": {
-                        "startLine": 22,
-                        "startColumn": 6,
-                        "startOffset": 654,
-                        "endColumn": 46,
-                        "endOffset": 694
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 516,
+                        "endColumn": 44,
+                        "endOffset": 556
                     }
                 }
             },
@@ -239,13 +239,13 @@
                     "endOffset": 621
                 },
                 "from": {
-                    "file": "D:\\Workspaces\\testposApp\\platforms\\android\\res\\values\\color.xml",
+                    "file": "C:\\Users\\lyzcw\\.android\\build-cache\\382e33d1dc94ff080a9f3cb9f39ab936d7448330\\output\\res\\values\\values.xml",
                     "position": {
-                        "startLine": 25,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 731,
+                        "startOffset": 561,
                         "endColumn": 64,
-                        "endOffset": 791
+                        "endOffset": 621
                     }
                 }
             },
@@ -258,13 +258,13 @@
                     "endOffset": 661
                 },
                 "from": {
-                    "file": "D:\\Workspaces\\testposApp\\platforms\\android\\res\\values\\color.xml",
+                    "file": "C:\\Users\\lyzcw\\.android\\build-cache\\382e33d1dc94ff080a9f3cb9f39ab936d7448330\\output\\res\\values\\values.xml",
                     "position": {
-                        "startLine": 3,
-                        "startColumn": 1,
-                        "startOffset": 61,
-                        "endColumn": 36,
-                        "endOffset": 96
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 626,
+                        "endColumn": 39,
+                        "endOffset": 661
                     }
                 }
             },
@@ -277,13 +277,13 @@
                     "endOffset": 702
                 },
                 "from": {
-                    "file": "D:\\Workspaces\\testposApp\\platforms\\android\\res\\values\\color.xml",
+                    "file": "C:\\Users\\lyzcw\\.android\\build-cache\\382e33d1dc94ff080a9f3cb9f39ab936d7448330\\output\\res\\values\\values.xml",
                     "position": {
-                        "startLine": 11,
-                        "startColumn": 1,
-                        "startOffset": 364,
-                        "endColumn": 37,
-                        "endOffset": 400
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 666,
+                        "endColumn": 40,
+                        "endOffset": 702
                     }
                 }
             },

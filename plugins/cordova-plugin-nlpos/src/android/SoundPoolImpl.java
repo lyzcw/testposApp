@@ -1,7 +1,7 @@
 package com.openunion.cordova.plugins.nlpos;
 
 
-import io.ionic.starter.R;
+import com.openunion.cordova.plugins.nlpos.R;
 
 import android.content.Context;
 import android.media.AudioManager;
