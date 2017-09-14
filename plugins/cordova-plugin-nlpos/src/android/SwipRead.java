@@ -42,6 +42,8 @@ public class SwipRead {
             LOG.d(LOG_TAG, showMsg);
             map.put("status", SUCCESS);
             map.put("msg", "读取磁条卡数据成功");
+            map1.put("cardType", "MSCARD");
+            map1.put("typeName", "磁条卡");
             Map map0 = new HashMap();
             map0.put("track-2", new String(secondTrack,"gbk"));
             map0.put("track-3", thirdTrack==null?"null": new String(thirdTrack,"gbk"));

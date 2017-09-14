@@ -63,28 +63,24 @@ var HomePage = (function () {
         this.renderer = renderer;
         this.homeModel = { "response": "等待POS响应中..." };
         platform.ready().then(function (e) {
-            window.addEventListener('readcard', _this.onReadCard, false);
-            window.addEventListener('scancode', _this.onScanCode, false);
-            //this.events.subscribe('readcard', () => this.onReadCard( e ));
+            window.addEventListener('readcard', function (data) {
+                alert('刷卡事件：' + data.info);
+                console.log('刷卡事件：' + data.info);
+                _this.homeModel.response = "\r\n*******刷卡事件*******\r\n" + data.info;
+            }, false);
+            window.addEventListener('scancode', function (data) {
+                //alert('扫码事件：' + data.info);
+                console.log('扫码事件：' + data.info);
+                _this.homeModel.response = "\r\n*******扫码事件*******\r\n" + data.info;
+            }, false);
         });
     }
-    HomePage.prototype.onReadCard = function (data) {
-        alert('刷卡信息：' + data.info);
-        console.log('有刷卡：' + data.info);
-        var temp = this.homeModel.response;
-        this.homeModel.response = "\r\n*******有刷卡事件*******\r\n" + data.info; // + "Info:" + data;
-    };
-    HomePage.prototype.onScanCode = function (data) {
-        alert('扫码信息：' + data.info);
-        console.log('扫码：' + data.info);
-        var temp = this.homeModel.response;
-        this.homeModel.response = "\r\n*******有扫码事件*******\r\n" + data.info; // + "Info:" + data;
-    };
     HomePage.prototype.openCardReader = function () {
         var _this = this;
         var promise = new Promise(function (resolve, reject) {
-            cordova.plugins.nlpos.openCardReader(function (data) {
-                _this.homeModel.response = data;
+            var readTimeout = 20;
+            cordova.plugins.nlpos.openCardReader((readTimeout), function (data) {
+                _this.homeModel.response = "\r\n*******刷卡同步消息*******\r\n" + data;
                 resolve(data);
             }, function (error) {
                 reject(error);
@@ -105,7 +101,7 @@ var HomePage = (function () {
         var _this = this;
         var promise = new Promise(function (resolve, reject) {
             cordova.plugins.nlpos.closeCardReader(function (data) {
-                _this.homeModel.response = data;
+                _this.homeModel.response = "\r\n*******刷卡同步消息*******\r\n" + data;
                 _this.renderer.setElementStyle(_this.response1.nativeElement, 'scrollTop', _this.response1.nativeElement.clientHeight + 'px');
                 resolve(data);
             }, function (error) {
@@ -117,7 +113,7 @@ var HomePage = (function () {
         var _this = this;
         var promise = new Promise(function (resolve, reject) {
             cordova.plugins.nlpos.scan(function (data) {
-                _this.homeModel.response = data;
+                _this.homeModel.response = "\r\n*******扫码同步消息*******\r\n" + data;
                 resolve(data);
             }, function (error) {
                 reject(error);
@@ -133,7 +129,7 @@ var HomePage = (function () {
             bill += "-----------------------------\n";
             bill += "+++++++++++++++++++++++++++++\n";
             cordova.plugins.nlpos.print((bill), function (data) {
-                _this.homeModel.response = data; //temp + "\r\n******************************************\r\n" + data;
+                _this.homeModel.response = "\r\n*******打印同步消息*******\r\n" + data; //temp + "\r\n******************************************\r\n" + data;
                 resolve(data);
             }, function (error) {
                 reject(error);

@@ -37,7 +37,7 @@ ADDED from D:\Workspaces\testposApp\platforms\android\AndroidManifest.xml:4:5-67
 		ADDED from D:\Workspaces\testposApp\platforms\android\AndroidManifest.xml:4:22-64
 application
 ADDED from D:\Workspaces\testposApp\platforms\android\AndroidManifest.xml:5:5-14:19
-MERGED from [:nlpos-res:] C:\Users\lyzcw\.android\build-cache\382e33d1dc94ff080a9f3cb9f39ab936d7448330\output\AndroidManifest.xml:11:5-15:19
+MERGED from [:nlpos-res:] C:\Users\lyzcw\.android\build-cache\4e929b48ca2c2ae5abaf873de4a3569d5e005d0d\output\AndroidManifest.xml:11:5-15:19
 	android:label
 		ADDED from D:\Workspaces\testposApp\platforms\android\AndroidManifest.xml:5:81-113
 	android:supportsRtl
@@ -47,7 +47,7 @@ MERGED from [:nlpos-res:] C:\Users\lyzcw\.android\build-cache\382e33d1dc94ff080a
 	android:icon
 		ADDED from D:\Workspaces\testposApp\platforms\android\AndroidManifest.xml:5:53-80
 	android:allowBackup
-		ADDED from [:nlpos-res:] C:\Users\lyzcw\.android\build-cache\382e33d1dc94ff080a9f3cb9f39ab936d7448330\output\AndroidManifest.xml:12:9-35
+		ADDED from [:nlpos-res:] C:\Users\lyzcw\.android\build-cache\4e929b48ca2c2ae5abaf873de4a3569d5e005d0d\output\AndroidManifest.xml:12:9-35
 activity#io.ionic.starter.MainActivity
 ADDED from D:\Workspaces\testposApp\platforms\android\AndroidManifest.xml:6:9-11:20
 	android:label
@@ -82,7 +82,7 @@ ADDED from D:\Workspaces\testposApp\platforms\android\AndroidManifest.xml:12:9-1
 		ADDED from D:\Workspaces\testposApp\platforms\android\AndroidManifest.xml:12:19-86
 uses-sdk
 ADDED from D:\Workspaces\testposApp\platforms\android\AndroidManifest.xml:15:5-74
-MERGED from [:nlpos-res:] C:\Users\lyzcw\.android\build-cache\382e33d1dc94ff080a9f3cb9f39ab936d7448330\output\AndroidManifest.xml:7:5-9:41
+MERGED from [:nlpos-res:] C:\Users\lyzcw\.android\build-cache\4e929b48ca2c2ae5abaf873de4a3569d5e005d0d\output\AndroidManifest.xml:7:5-9:41
 MERGED from [org.apache.cordova:CordovaLib:6.2.3:debug] D:\Workspaces\testposApp\platforms\android\CordovaLib\build\intermediates\bundles\debug\AndroidManifest.xml:25:5-44
 	android:targetSdkVersion
 		ADDED from D:\Workspaces\testposApp\platforms\android\AndroidManifest.xml:15:42-71

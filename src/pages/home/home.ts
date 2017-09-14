@@ -16,35 +16,29 @@ export class HomePage {
   constructor(private platform: Platform, private events: Events, public navCtrl: NavController, public renderer: Renderer) {
     platform.ready().then((e) => {
       
-      window.addEventListener('readcard', this.onReadCard, false );
-      window.addEventListener('scancode', this.onScanCode, false );
-      //this.events.subscribe('readcard', () => this.onReadCard( e ));
-      
+      window.addEventListener('readcard', (data:any) => {
+          alert('刷卡事件：' + data.info);
+          console.log('刷卡事件：' + data.info );
+          this.homeModel.response = "\r\n*******刷卡事件*******\r\n" + data.info;
+        }, false );
+
+      window.addEventListener('scancode', (data:any) => {
+          //alert('扫码事件：' + data.info);
+          console.log('扫码事件：' + data.info );
+          this.homeModel.response = "\r\n*******扫码事件*******\r\n" + data.info;
+      }, false );
     });
 
   }
 
   homeModel: HomeModel = {"response":"等待POS响应中..."};
-  
-  onReadCard( data ): void{
-    alert('刷卡信息：' + data.info);
-    console.log('有刷卡：' + data.info );
-    let temp = this.homeModel.response;
-    this.homeModel.response = "\r\n*******有刷卡事件*******\r\n" + data.info; // + "Info:" + data;
-  }
-
-  onScanCode( data ): void{
-    alert('扫码信息：' + data.info);
-    console.log('扫码：' + data.info );
-    let temp = this.homeModel.response;
-    this.homeModel.response = "\r\n*******有扫码事件*******\r\n" + data.info; // + "Info:" + data;
-  }
-
+    
   openCardReader(): void {
     
     let promise = new Promise((resolve, reject) => {
-      cordova.plugins.nlpos.openCardReader( data => {
-        this.homeModel.response = data;
+      let readTimeout = 20;
+      cordova.plugins.nlpos.openCardReader((readTimeout), data => {
+        this.homeModel.response = "\r\n*******刷卡同步消息*******\r\n" + data;
         resolve(data);
       }, error => {
         reject(error);
@@ -69,7 +63,7 @@ export class HomePage {
     
     let promise = new Promise((resolve, reject) => {
       cordova.plugins.nlpos.closeCardReader( data => {
-        this.homeModel.response = data;
+        this.homeModel.response = "\r\n*******刷卡同步消息*******\r\n" + data;
         this.renderer.setElementStyle(this.response1.nativeElement, 'scrollTop', this.response1.nativeElement.clientHeight + 'px');
         resolve(data);
       }, error => {
@@ -82,7 +76,7 @@ export class HomePage {
   scan(): void {
     let promise = new Promise((resolve, reject) => {
       cordova.plugins.nlpos.scan( data => {
-        this.homeModel.response = data;
+        this.homeModel.response = "\r\n*******扫码同步消息*******\r\n" + data;
         resolve(data);
       }, error => {
         reject(error);
@@ -98,7 +92,7 @@ export class HomePage {
       bill += "-----------------------------\n";
       bill += "+++++++++++++++++++++++++++++\n";
       cordova.plugins.nlpos.print((bill), data => {
-        this.homeModel.response = data; //temp + "\r\n******************************************\r\n" + data;
+        this.homeModel.response = "\r\n*******打印同步消息*******\r\n" + data; //temp + "\r\n******************************************\r\n" + data;
         resolve(data);
       }, error => {
         reject(error);

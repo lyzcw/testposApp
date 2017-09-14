@@ -1,0 +1,11 @@
+repositories {
+    flatDir {
+        dirs 'libs' 
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //compile(name:'aar名字', ext:'aar')
+    compile (name:'nlpos-res',ext:'aar')
+}

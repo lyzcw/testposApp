@@ -114,7 +114,7 @@ public class ScanViewActivity extends Activity{
 			if(scanType==ScanType.BACK){//后置的
 				//frontLL.setVisibility(View.GONE);
 				//backFL.setVisibility(View.VISIBLE);
-        Scan.scanner.initScanner(context,surfaceView,scanType);
+        		Scan.scanner.initScanner(context,surfaceView,scanType);
 //			}else if(scanType==ScanType.FRONT){
 //				backFL.setVisibility(View.GONE);
 //				frontLL.setVisibility(View.VISIBLE);
@@ -131,9 +131,9 @@ public class ScanViewActivity extends Activity{
 				scanBundle.putInt("errorCode", 0x00);
 				scanBundle.putString("errormessage","不支持的扫描类型");
 				scanMsg.setData(scanBundle);
-        nlpos.getScanEventHandler().sendMessage(scanMsg);
+        		nlpos.getScanEventHandler().sendMessage(scanMsg);
 			}
-      Scan.scanner.startScan(timeout, TimeUnit.SECONDS, new ScannerListener() {
+      			Scan.scanner.startScan(timeout, TimeUnit.SECONDS, new ScannerListener() {
 
 				@Override
 				public void onResponse(String[] barcodes) {
@@ -145,7 +145,7 @@ public class ScanViewActivity extends Activity{
 					Bundle scanBundle = new Bundle();
 					scanBundle.putStringArray("barcodes", barcodes);
 					scanMsg.setData(scanBundle);
-          nlpos.getScanEventHandler().sendMessage(scanMsg);
+          			nlpos.getScanEventHandler().sendMessage(scanMsg);
 
 				}
 
@@ -157,7 +157,7 @@ public class ScanViewActivity extends Activity{
 						logger.debug("---------------onFinish---------");
 						Message scanMsg = new Message();
 						scanMsg.what = Const.ScanResult.SCAN_FINISH;
-            nlpos.getScanEventHandler().sendMessage(scanMsg);
+            			nlpos.getScanEventHandler().sendMessage(scanMsg);
 					}
 				}
 			},true);
@@ -184,9 +184,9 @@ public class ScanViewActivity extends Activity{
 	protected void onPause() {
 		isFinish=true;
 		System.out.println("-----onPause--------------");
-    Scan.scanner.stopScan();
+    	Scan.scanner.stopScan();
 		if (scanAnim != null && scanAnim.isRunning()) {
-	           scanAnim.stop();
+	        scanAnim.stop();
 	    }
 		super.onPause();
 	}

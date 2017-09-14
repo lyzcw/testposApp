@@ -37,9 +37,9 @@ function handlers() {
  * Keep track of how many handlers wehave so we can start and stop the native pos listener
  * appropriately (and hopefully save pos life!).
  */
-NLPos.onReadCard = function() {
+NLPos.onReadCard = function(readTimeout) {
   alert("onReadCard");
-  exec(nlpos._status, nlpos._error,"nlpos", "openCardReader", []);
+  exec(nlpos._status, nlpos._error,"nlpos", "openCardReader", [readTimeout]);
 };
 
 NLPos.onScanCode = function() {
@@ -47,8 +47,8 @@ NLPos.onScanCode = function() {
   exec(nlpos._status, nlpos._error,"nlpos", "scan", []);
 };
 
-NLPos.prototype.openCardReader = function(success, error) {
-  return exec(nlpos._status, error, 'nlpos', 'openCardReader', []);
+NLPos.prototype.openCardReader = function(readTimeout, success, error) {
+  return exec(nlpos._status, error, 'nlpos', 'openCardReader', [readTimeout]);
 };
 
 NLPos.prototype.closeCardReader = function(success, error) {
@@ -68,8 +68,9 @@ NLPos.prototype.getAsynMsg = function(success, error) {
  *
  * @param {Object} info           keys: info
  */
-NLPos.prototype._status = function (info) {
+NLPos.prototype._status = function ( info ) {
   //Something changed. Fire ReadCard event
+  
   var tempStr = info.info;
   var jsonObj = JSON.parse(tempStr);
   var eventStr = jsonObj.event;
@@ -77,7 +78,9 @@ NLPos.prototype._status = function (info) {
     cordova.fireWindowEvent("readcard",info);
   }else if( eventStr=="scancode" ){
     cordova.fireWindowEvent("scancode",info);
-  }    
+  }else{
+    console.log("不返回的消息: " + tempStr );
+  }         
   
 };
 
